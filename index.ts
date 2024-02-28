@@ -73,6 +73,6 @@ function makeElement<
   const { returned, stores } = data;
 
   return derived(stores, values => {
-    return returned(values as StoresValues<S>);
+    return returned(values);
   }) as MakeElement<S, P, R>;
 }
