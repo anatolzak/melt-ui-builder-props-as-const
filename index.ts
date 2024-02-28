@@ -37,8 +37,8 @@ makeElement({
 makeElement({
   stores: [writable(true)],
   // If we add an explicit type for the store values parameter, the object is interpreted as const.
-	// Note that TS already knew the type of the parameter without needing to explicitly define it.
-	// But for some reason adding the explicit type, makes the object be interpreted as const.
+  // Note that TS already knew the type of the parameter without needing to explicitly define it.
+  // But for some reason adding the explicit type, makes the object be interpreted as const.
   returned: ([$open]: [boolean]) => {
     return {
       'data-state': 'closed',
